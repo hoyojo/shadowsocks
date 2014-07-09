@@ -100,14 +100,14 @@ function download_files(){
 function config_shadowsocks(){
     cat > /etc/shadowsocks.json<<-EOF
 {
-    "server":"${IP}",
-    "server_port":8989,
-    "local_address": "127.0.0.1",
-    "local_port":1080,
-    "password":"${shadowsockspwd}",
-    "timeout":600,
-    "method":"aes-256-cfb",
-    "fast_open":false,
+    "server":"107.155.98.67",
+    "server_port":8980,
+    "local_port":1025,
+    "password":"secret123",
+    "timeout":300,
+    "method":"aes-256-cfb"
+    "local_address":"127.0.0.1",
+    "fast_open":false
     "workers":1
 }
 EOF
